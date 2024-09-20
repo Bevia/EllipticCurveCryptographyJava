@@ -10,6 +10,7 @@ public class Main {
         try {
             // 1. Create a KeyPairGenerator for ECC
             KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("EC");
+            //Returns a KeyPairGenerator object that generates public/ private key pairs for the specified algorithm
 
             // 2. Initialize it with a specific curve (NIST P-256 in this case)
             keyPairGenerator.initialize(new ECGenParameterSpec("secp256r1"));
